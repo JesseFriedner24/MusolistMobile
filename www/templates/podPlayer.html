@@ -1,0 +1,29 @@
+<ion-view view-title="Musolist">
+    <ion-content ng-controller="AudioController">
+        <div class="list card" ng-repeat="audio in audioTracks">
+            <div class="item item-avatar">
+                <img src="../img/musoimage.png">
+                <h2>{{audio.title}}</h2>
+                <p>{{data.date}}</p>
+                <p>{{data.url}}</p>
+            </div>
+            <div class="item tabs tabs-secondary tabs-icon-left">
+                <div class="item item-image">
+                </div>
+                <a class="tab-item dark" ng-click="playTrack(audio.track, audio.key)">
+                    <i class="icon ion-music-note assertive"></i> Start Podcast
+                </a>
+               <a class="tab-item dark" ng-click="stopTrack()">
+    <i class="icon ion-pause assertive"></i> Pause
+</a>
+
+                <a class="tab-item dark" ng-click="">
+                    <i class="icon ion-bookmark assertive"></i> Bookmark
+                </a>
+            </div>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer bar-assertive">
+        <div class="title">Music for locals, by locals</div>
+    </div>
+</ion-view>

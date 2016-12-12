@@ -1,0 +1,12 @@
+<ion-view view-title="Home">
+    <ion-content ng-controller="AudioController">
+        <div class="list card" ng-repeat="audio in audioTracks">
+            <div class="item item-avatar">
+                <img src="../img/musoimage.png">
+                <h2>{{audio.title}}</h2>
+                <p>{{audio.date}}</p>
+                <img ng-src="{{audio.image}}" />
+            </div>
+            <div class="login"></div>
+    </ion-content>
+</ion-view>

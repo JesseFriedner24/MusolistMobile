@@ -1,0 +1,29 @@
+/* Empty. Add your own CSS if you like */
+
+.track {
+    .track__bg {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.login {
+    background: url(../img/concert.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 246px;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.background,
+.background .pane,
+.background .item,
+.background .item-complex .item-content {
+    background-color: #ff2f;
+}
